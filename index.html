@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRIPTOGRAFAR ONE PIECE</title>
+    <link rel="icon" href="imagens/favicon(1).ico" type="icon">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <main>
+        <div>
+           <img src="imagens/titulo.png" alt="titulo">
+            <h6> &#9888;&#65039; Apenas letras minúsculas e sem acento.</h6>
+            <button id="botao-criptador" onclick="crip()">CRIPTOGRAFAR</button>
+            <button id="botao-descriptador" onclick="descri()">DESCRIPTAR</button>
+        </div>
+        <audio id="background-music" src="imagens/musica.mp3" autoplay loop></audio>
+            <div class="digite">
+              <textarea name="input" id="hento"></textarea>
+              <p>"Desvende os segredos da Grand Line! Digite sua mensagem abaixo para ajudar Luffy a encontrar o <strong>One Piece</strong>."</p>
+        </div>
+    </main>
+        <div class="image-square">
+           <button id="botao-copiador" onclick="copy()">COPIAR</button>
+           <button id="botao-limpador" onclick="limpa()">LIMPAR</button>
+           <div class="digitedentro">
+               <textarea name="input" id="henti"></textarea>
+           </div>
+        </div>
+    <script src="interacao/script.js"></script>
+</body>
+</html>

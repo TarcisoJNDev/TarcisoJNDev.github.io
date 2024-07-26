@@ -1,0 +1,280 @@
+body {
+    background-image: url("../imagens/backgroundone.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+main {
+    max-width: 100%;
+    overflow: hidden
+}
+
+img[src="imagens/titulo.png"] {
+    max-width: 100%;
+    overflow: hidden;
+    width: 495px;
+    height: 400px;
+    position: relative;
+    left: 220px;
+    top: -110px;
+}
+
+#botao-criptador {
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 29px;
+    height: 70px;
+    width: 300px;
+    position: relative;
+    left: 140px;
+    top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#botao-descriptador {
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 28px;
+    height: 70px;
+    width: 300px;
+    position: relative;
+    left: 180px;
+    top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h6 {
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 13px;
+    position: relative;
+    left: 130px;
+    top: 65px;
+    color:rgb(18, 5, 100);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.digite{
+    max-width: 100%;
+      overflow: hidden;
+    position: relative;
+    top: -350px;
+}
+
+.digite textarea {
+    max-width: 100%; 
+    overflow: hidden;
+    width: 746px;
+    height: 250px;
+    position: relative;
+    resize: none;
+    left: 75px;
+    top: 30px;
+    border: 1px solid rgba(137, 137, 76, 0.915);
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(245, 245, 163, 0.915);
+    border-radius: 2%;
+  }
+
+p {
+  position: relative;
+  top: -270px;
+  left: 70px;
+  font-size: large;
+  color: white;
+  font-style: oblique;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+}
+
+Strong {
+  color: red;
+}
+
+.image-square {
+    max-width: 100%; 
+    overflow: hidden;
+
+    background-image: url("../imagens/backgroundone2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    width: 550px; 
+    height: 680px; 
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+    color: white;
+}
+
+.digitedentro textarea {
+    max-width: 100%; 
+    overflow: hidden;
+    width: 500px;
+    height: 485px;
+    position: relative;
+    left: 4px;
+    top: -132px;
+    resize: none;
+    border: 1px solid rgba(137, 137, 76, 0.915);
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(245, 245, 163, 0.915);
+    border-radius: 5%;
+  }
+
+
+#botao-copiador{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 530px;
+    left: -120px;
+    width: 180px;
+    height: 67px;
+    font-size: 27px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#botao-limpador{
+    max-width: 100%; 
+    overflow: hidden;
+    position: relative;
+    top: 465px;
+    left: 120px;
+    width: 180px;
+    height: 67px;
+    font-size: 27px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: hsl(210, 80%, 42%);
+  --bg-color: #141218;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+button {
+  position:relative;
+  padding: 10px 20px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+  font-family: "Source Code Pro";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;  
+  color: var(--text-color);
+  
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 4px; 
+  z-index: 0;  
+  overflow: hidden;   
+}
+
+button:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, button::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+button::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+} 
+
+.right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+  
+  background-color: var(--bg-color);
+  color:transparent;
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+button:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+button .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+button .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+button::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
